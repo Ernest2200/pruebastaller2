@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Shopkart</string>
+    <string name="title_home">Home</string>
+    <string name="title_dashboard">Cart</string>
+    <string name="title_notifications">Account</string>
+    <string name="addToCart">Añadir al carrito</string>
+    <string name="addedToCart">Añadido al carrito</string>
+    <string name="isEmpty">Tu carrito esta vacio :(</string>
+    <string name="x1">x1</string>
+    <string name="pay">Pagar</string>
+    <string name="orders">Tu historial de compras</string>
+
+</resources>
