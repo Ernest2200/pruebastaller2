@@ -29,12 +29,9 @@ class HomeFragment : Fragment() {
         val binding: FragmentHomeBinding = DataBindingUtil.inflate(inflater, R.layout.fragment_home, container,false)
         binding.lifecycleOwner = this
         binding.viewModel = viewModel
-        binding.recyclerView1.adapter = ItemAdapter()
-        binding.recyclerView2.adapter = ItemAdapter()
-        binding.recyclerView3.adapter = ItemAdapter()
-        binding.recyclerView4.adapter = ItemAdapter()
-        binding.recyclerView5.adapter = ItemAdapter()
-        binding.recyclerView6.adapter = ItemAdapter()
+
+
+
         return binding.root
     }
 

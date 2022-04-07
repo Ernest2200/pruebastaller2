@@ -81,7 +81,7 @@
                             android:padding="10dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/recyclerView1">
+                            app:layout_constraintTop_toBottomOf="@+id/textView12">
 
                             <TextView
                                 android:id="@+id/textView13"
@@ -143,9 +143,10 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:padding="8dp"
+
                             android:text="@{viewModel.kitTypes[0].name}"
                             android:textColor="@color/colorAccent"
-                            android:textSize="20sp"
+                            android:textSize="16sp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/imageView1" />
 
@@ -156,8 +157,9 @@
                             android:padding="8dp"
                             android:text="@{viewModel.kitTypes[0].price}"
                             android:textSize="20sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView1" />
+
+                            app:layout_constraintTop_toBottomOf="@+id/textView11"
+                            tools:ignore="MissingConstraints" />
 
                         <TextView
                             android:id="@+id/textView12"
@@ -165,23 +167,13 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="8dp"
+                            android:paddingBottom="17dp"
                             android:text="@{viewModel.kitTypes[0].description}"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+                            app:layout_constraintTop_toBottomOf="@+id/textView14" />
 
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/recyclerView1"
-                            android:layout_width="0dp"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView12"
-                            app:listData="@{viewModel.items1}"
-                            app:padding="@{30}"
-                            tools:listitem="@layout/grid_view_item" />
+
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
@@ -220,7 +212,7 @@
                             android:onClick="@{()->viewModel.addToCart(2)}"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/recyclerView2">
+                            app:layout_constraintTop_toBottomOf="@+id/textView22">
 
                             <TextView
                                 android:id="@+id/textView23"
@@ -283,7 +275,7 @@
                             android:padding="8dp"
                             android:text="@{viewModel.kitTypes[1].name}"
                             android:textColor="@color/colorAccent"
-                            android:textSize="20sp"
+                            android:textSize="16sp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/imageView2" />
 
@@ -294,8 +286,9 @@
                             android:padding="8dp"
                             android:text="@{viewModel.kitTypes[1].price}"
                             android:textSize="20sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView2" />
+
+                            app:layout_constraintTop_toBottomOf="@+id/textView21"
+                            tools:ignore="MissingConstraints" />
 
                         <TextView
                             android:id="@+id/textView22"
@@ -303,24 +296,13 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="8dp"
+                            android:paddingBottom="17dp"
                             android:text="@{viewModel.kitTypes[1].description}"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView21" />
+                            app:layout_constraintTop_toBottomOf="@+id/textView24" />
 
 
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/recyclerView2"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView22"
-                            app:listData="@{viewModel.items2}"
-                            app:padding="@{30}"
-                            tools:listitem="@layout/grid_view_item" />
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
@@ -360,7 +342,7 @@
                             android:padding="10dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/recyclerView3">
+                            app:layout_constraintTop_toBottomOf="@+id/textView32">
 
                             <TextView
                                 android:id="@+id/textView33"
@@ -423,7 +405,7 @@
                             android:padding="8dp"
                             android:text="@{viewModel.kitTypes[2].name}"
                             android:textColor="@color/colorAccent"
-                            android:textSize="20sp"
+                            android:textSize="16sp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
@@ -433,10 +415,12 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="8dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingBottom="17dp"
                             android:text="@{viewModel.kitTypes[2].description}"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView31" />
+                            app:layout_constraintTop_toBottomOf="@+id/textView34" />
 
                         <TextView
                             android:id="@+id/textView34"
@@ -445,21 +429,10 @@
                             android:padding="8dp"
                             android:text="@{viewModel.kitTypes[2].price}"
                             android:textSize="20sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+                            app:layout_constraintTop_toBottomOf="@+id/textView31"
+                            tools:ignore="MissingConstraints" />
 
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/recyclerView3"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView32"
-                            app:listData="@{viewModel.items3}"
-                            app:padding="@{30}"
-                            tools:listitem="@layout/grid_view_item" />
+
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
@@ -499,7 +472,7 @@
                             android:padding="10dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/recyclerView4">
+                            app:layout_constraintTop_toBottomOf="@+id/textView46">
 
                             <TextView
                                 android:id="@+id/textView44"
@@ -562,7 +535,7 @@
                             android:padding="8dp"
                             android:text="@{viewModel.kitTypes[3].name}"
                             android:textColor="@color/colorAccent"
-                            android:textSize="20sp"
+                            android:textSize="16sp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
@@ -572,10 +545,11 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="8dp"
+                            android:paddingBottom="17dp"
                             android:text="@{viewModel.kitTypes[3].description}"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView45" />
+                            app:layout_constraintTop_toBottomOf="@+id/textView47" />
 
                         <TextView
                             android:id="@+id/textView47"
@@ -584,21 +558,11 @@
                             android:padding="8dp"
                             android:text="@{viewModel.kitTypes[3].price}"
                             android:textSize="20sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView4" />
 
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/recyclerView4"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView46"
-                            app:listData="@{viewModel.items3}"
-                            app:padding="@{30}"
-                            tools:listitem="@layout/grid_view_item" />
+                            app:layout_constraintTop_toBottomOf="@+id/textView45"
+                            tools:ignore="MissingConstraints" />
+
+
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
@@ -638,7 +602,7 @@
                             android:padding="10dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/recyclerView5">
+                            app:layout_constraintTop_toBottomOf="@+id/textView57">
 
                             <TextView
                                 android:id="@+id/textView55"
@@ -701,7 +665,7 @@
                             android:padding="8dp"
                             android:text="@{viewModel.kitTypes[4].name}"
                             android:textColor="@color/colorAccent"
-                            android:textSize="20sp"
+                            android:textSize="16sp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
@@ -711,10 +675,11 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="8dp"
+                            android:paddingBottom="17dp"
                             android:text="@{viewModel.kitTypes[4].description}"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView56" />
+                            app:layout_constraintTop_toBottomOf="@+id/textView58" />
 
                         <TextView
                             android:id="@+id/textView58"
@@ -723,21 +688,11 @@
                             android:padding="8dp"
                             android:text="@{viewModel.kitTypes[4].price}"
                             android:textSize="20sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView5" />
 
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/recyclerView5"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView57"
-                            app:listData="@{viewModel.items3}"
-                            app:padding="@{30}"
-                            tools:listitem="@layout/grid_view_item" />
+                            app:layout_constraintTop_toBottomOf="@+id/textView56"
+                            tools:ignore="MissingConstraints" />
+
+
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
@@ -776,7 +731,7 @@
                             android:padding="10dp"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/recyclerView6">
+                            app:layout_constraintTop_toBottomOf="@+id/textView68">
 
                             <TextView
                                 android:id="@+id/textView66"
@@ -839,7 +794,7 @@
                             android:padding="8dp"
                             android:text="@{viewModel.kitTypes[5].name}"
                             android:textColor="@color/colorAccent"
-                            android:textSize="20sp"
+                            android:textSize="16sp"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
@@ -849,10 +804,11 @@
                             android:layout_height="wrap_content"
                             android:layout_marginStart="8dp"
                             android:layout_marginEnd="8dp"
+                            android:paddingBottom="17dp"
                             android:text="@{viewModel.kitTypes[5].description}"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView67" />
+                            app:layout_constraintTop_toBottomOf="@+id/textView69" />
 
                         <TextView
                             android:id="@+id/textView69"
@@ -861,21 +817,11 @@
                             android:padding="8dp"
                             android:text="@{viewModel.kitTypes[5].price}"
                             android:textSize="20sp"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/imageView6" />
 
-                        <androidx.recyclerview.widget.RecyclerView
-                            android:id="@+id/recyclerView6"
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal"
-                            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-                            app:layout_constraintEnd_toEndOf="parent"
-                            app:layout_constraintStart_toStartOf="parent"
-                            app:layout_constraintTop_toBottomOf="@+id/textView68"
-                            app:listData="@{viewModel.items3}"
-                            app:padding="@{30}"
-                            tools:listitem="@layout/grid_view_item" />
+                            app:layout_constraintTop_toBottomOf="@+id/textView67"
+                            tools:ignore="MissingConstraints" />
+
+
 
                     </androidx.constraintlayout.widget.ConstraintLayout>
                 </androidx.cardview.widget.CardView>
