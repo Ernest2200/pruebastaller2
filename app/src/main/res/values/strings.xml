@@ -1,8 +1,8 @@
 <resources>
-    <string name="app_name">Shopkart</string>
-    <string name="title_home">Home</string>
-    <string name="title_dashboard">Cart</string>
-    <string name="title_notifications">Account</string>
+    <string name="app_name">Farmacia SV</string>
+    <string name="title_home">Inicio</string>
+    <string name="title_dashboard">Carrito</string>
+    <string name="title_notifications">Historial</string>
     <string name="addToCart">Añadir al carrito</string>
     <string name="addedToCart">Añadido al carrito</string>
     <string name="isEmpty">Tu carrito esta vacio :(</string>

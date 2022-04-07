@@ -22,7 +22,7 @@ class CartViewModel(
             _loading.value = true
             repository.deleteAll()
             _loading.value = false
-            Toast.makeText(getApplication(), "Paid", Toast.LENGTH_LONG).show()
+            Toast.makeText(getApplication(), "Pago realizado con exito!!", Toast.LENGTH_LONG).show()
         }
     }
 }

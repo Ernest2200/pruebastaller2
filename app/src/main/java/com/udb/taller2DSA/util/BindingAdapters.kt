@@ -210,7 +210,7 @@ fun totalBill(
             sum += items.price.substring(1).toInt()
         }
     }
-    val totalBill: String = "Total Bill: ₹$sum"
+    val totalBill: String = "Total a Pagar: $$sum"
     price.text = totalBill
 }
 @BindingAdapter("payment")

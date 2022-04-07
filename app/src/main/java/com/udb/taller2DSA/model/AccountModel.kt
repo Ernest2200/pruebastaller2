@@ -4,6 +4,6 @@ data class AccountModel (
     val id: Int,
     val price: Int
 ){
-    val idText = "Order #$id"
-    val priceText = "₹$price"
+    val idText = "Compra #$id"
+    val priceText = "$$price"
 }
